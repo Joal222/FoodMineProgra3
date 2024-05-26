@@ -11,9 +11,10 @@ import orderRouter from './routers/order.router';
 const app = express();
 app.use(express.json());
 app.use(cors({
-    credentials:true,
-    origin:["http://localhost:4200"]
+    credentials: true,
+    origin: ["http://localhost:4200", "https://foodmineprogra3.onrender.com"]
 }));
+
 
 app.use("/api/foods", foodRouter);
 app.use("/api/users", userRouter);
